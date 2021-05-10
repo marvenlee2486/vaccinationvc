@@ -104,7 +104,7 @@ class IssueVc:
         patient_email = patient_data.get(Patient.EMAIL)
         if not patient_name or not patient_email:
             context.user_data[State.START_OVER.value] = False
-            msg = "You have not enter patient name or patient email, please enter them."
+            msg = "You have not enter patient name or patient email, please enter them \."
             update.callback_query.message.reply_text(msg, parse_mode='MarkdownV2')
             return IssueVc.issue_intro_callback(update, context)
 
