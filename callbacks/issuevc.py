@@ -102,6 +102,10 @@ class IssueVc:
 
         patient_name = patient_data.get(Patient.NAME)
         patient_email = patient_data.get(Patient.EMAIL)
+        if not patient_name or not patient_email:
+            context.user_data[State.START_OVER.value] = False
+            return IssueVc.issue_intro_callback(update, context)
+
 
         vc, status_code = ApiService.build_unsigned_vc(name=patient_name, issuer_name=issuer, org_name=org, context=context)
 

@@ -10,36 +10,35 @@ class State(Enum):
     REGISTER = 2
     LOGIN = 3
     ISSUE_VC = 4
-    ORG = 121
-    ISSUER = 1212132212
-    VERIFY = 12252
+    ORG = 5
+    ISSUER = 6
+    VERIFY = 7
     # State definition for Register
-    REGISTER_SELECTING_ACTION = 5
-    REGISTER_GET_INFO = 6
-    REGISTER_SUBMIT = 7
+    REGISTER_SELECTING_ACTION = 8
+    REGISTER_GET_INFO = 9
+    REGISTER_SUBMIT = 10
     # State definition for Login
-    LOGIN_SELECTING_ACTION = 8
-    LOGIN_GET_INFO = 9
-    LOGIN_SUBMIT = 10
+    LOGIN_SELECTING_ACTION = 11
+    LOGIN_GET_INFO = 12
+    LOGIN_SUBMIT = 13
     # State definition for Organization Name
-    ORG_SELECTING_ACTION = 11
-    ORG_GET_INFO = 12
+    ORG_SELECTING_ACTION = 14
+    ORG_GET_INFO = 15
     # State definition for Issuer Name
-    ISSUER_SELECTING_ACTION = 1212
-    ISSUER_GET_INFO = 1651
-    ISSUER_SUBMIT = 191
+    ISSUER_SELECTING_ACTION = 16
+    ISSUER_GET_INFO = 17
+    ISSUER_SUBMIT = 18
     # State definition for Issue Vc
-    ISSUERVC_SELECTING_ACTION = 122
-    ISSUEVC_GET_INFO = 221
-    ISSUEVC_SUBMIT = 4542
+    ISSUERVC_SELECTING_ACTION = 19
+    ISSUEVC_GET_INFO = 20
+    ISSUEVC_SUBMIT = 21
     # State definition for Verifying
-    VERIFY_GET_INFO =98786576453
-    VERIFY_SUBMIT =12312
+    VERIFY_GET_INFO =22
+    VERIFY_SUBMIT =23
     # Meta states
-    STOPPING = 14
-    SHOWING = 15
-    START_OVER = 16
-    MIDSTATE = 1123121
+    STOPPING = 24
+    SHOWING = 25
+    START_OVER = 26
     # Shortcut to end conversation
     END = ConversationHandler.END
 
