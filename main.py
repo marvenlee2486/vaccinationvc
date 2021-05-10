@@ -41,7 +41,7 @@ def main():
             ]
         },
         fallbacks=[
-            CommandHandler("stop", stop.stop_callback),
+            CommandHandler("stop", stop.stop_callback_second_level),
             CallbackQueryHandler(
                 back_main_menu.back_main_menu_callback,
                 pattern=f"^{str(State.END.value)}$"
@@ -71,7 +71,7 @@ def main():
 
         },
         fallbacks=[
-            CommandHandler("stop", stop.stop_callback),
+            CommandHandler("stop", stop.stop_callback_second_level),
             CallbackQueryHandler(
                 back_main_menu.back_main_menu_callback,
                 pattern=f"^{str(State.END.value)}$"
@@ -95,7 +95,7 @@ def main():
 
         },
         fallbacks=[
-            CommandHandler("stop", stop.stop_callback),
+            CommandHandler("stop", stop.stop_callback_second_level),
             CallbackQueryHandler(
                 back_main_menu.back_main_menu_callback,
                 pattern=f"^{str(State.END.value)}$"
@@ -114,7 +114,7 @@ def main():
 
         },
         fallbacks=[
-            CommandHandler("stop", stop.stop_callback),
+            CommandHandler("stop", stop.stop_callback_second_level),
             CallbackQueryHandler(
                 back_main_menu.back_main_menu_callback,
                 pattern=f"^{str(State.END.value)}$"
@@ -139,7 +139,7 @@ def main():
             ],
         },
         fallbacks=[
-            CommandHandler("stop", stop.stop_callback),
+            CommandHandler("stop", stop.stop_callback_second_level),
             CallbackQueryHandler(
                 back_main_menu.back_main_menu_callback,
                 pattern=f"^{str(State.END.value)}$"
@@ -161,7 +161,7 @@ def main():
             ],
         },
         fallbacks=[
-            CommandHandler("stop", stop.stop_callback),
+            CommandHandler("stop", stop.stop_callback_second_level),
             CallbackQueryHandler(
                 back_main_menu.back_main_menu_callback,
                 pattern=f"^{str(State.END.value)}$"
